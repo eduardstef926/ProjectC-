@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PatientClinic>
+	<Second>
+		<ParentTable>Patient</ParentTable>
+		<ChildTable>Client</ChildTable>
+		<SelectParentTable>Select * from Patient</SelectParentTable>
+		<SelectChildTable>Select * from Clinic</SelectChildTable>
+		<SearchChildTable>Select * from Clinic where PatientId='</SearchChildTable>
+		<InsertChildTable>Insert into Clinic(ClinicName,PatientId) values ('</InsertChildTable>
+		<DeleteChildTable>Delete from Clinic where ClinicId='</DeleteChildTable>
+		<UpdateChildTable>Update Clinic set ClinicName=' PatientId=' where ClinicId='</UpdateChildTable>
+	</Second>
+	<First>
+		<ParentTable>Doctor1</ParentTable>
+		<ChildTable>Hospital1</ChildTable>
+		<SelectParentTable>select * from Doctor1</SelectParentTable>
+		<SelectChildTable>select * from Hospital1</SelectChildTable>
+		<SearchChildTable>Select * from Doctor1 where DoctorId='</SearchChildTable>
+		<InsertChildTable>Insert into Hospital1(HospitalName,DoctorId) values ('</InsertChildTable>
+		<DeleteChildTable>Delete from Hospital1 where HospitalId='</DeleteChildTable>
+		<UpdateChildTable>Update Hospital1 set HospitalName=' DoctorId=' where HospitalId='</UpdateChildTable>
+	</First>
+</PatientClinic>
