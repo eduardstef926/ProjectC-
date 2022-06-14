@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication14.Models;
 
@@ -10,9 +11,10 @@ using WebApplication14.Models;
 namespace WebApplication14.Migrations
 {
     [DbContext(typeof(TopicController))]
-    partial class TopicControllerModelSnapshot : ModelSnapshot
+    [Migration("20220614150255_Topic")]
+    partial class Topic
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

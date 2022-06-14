@@ -2,13 +2,11 @@
 
 namespace WebApplication14.Models
 {
-    public class TopicController: DbContext
+    public class TopicController:DbContext
     {
+        public TopicController(DbContextOptions<TopicController> options) : base(options)
+        { }
 
-        public TopicController(DbContextOptions<TopicController> context) : base(context)
-        {
-
-        }
-        public DbSet<Topics> Topics { get; set; }
+        public DbSet<Topic> Topics { get; set; }
     }
 }
